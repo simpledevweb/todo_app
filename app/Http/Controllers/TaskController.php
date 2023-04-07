@@ -17,7 +17,7 @@ class TaskController extends Controller
             'deadline' => $request->deadline
         ]);
         return [
-            'successful' => true
+            'successful_added' => true
         ];
     }
 
@@ -37,7 +37,7 @@ class TaskController extends Controller
             "deadline" => $request->deadline
         ]);
         return [
-            'successful' => true
+            'successful_updated' => true
         ];
     }
 
@@ -51,7 +51,7 @@ class TaskController extends Controller
             }
         $task_del->delete();
         return [
-            'successful' => true
+            'successful_deleted' => true
         ];
     }
 
